@@ -1,17 +1,15 @@
 import React, { useState } from 'react'
 import {Link, useNavigate} from 'react-router-dom'
 import {useSelector, useDispatch} from 'react-redux'
-import {FaSignInAlt, FaSignOutAlt, FaUser} from 'react-icons/fa'
+import {FaSignOutAlt} from 'react-icons/fa'
 import { logout, reset } from '../features/auth/authSlice'
 import { useEffect } from 'react'
-import { deleteProject, getProjects } from '../features/projects/projectSlice'
+import { getProjects } from '../features/projects/projectSlice'
 import ProjectItem from './ProjectItem'
 import ProjectForm from './ProjectForm'
-import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
-import Project from '../pages/Project'
 import { getTasks, createTask, updateTask } from '../features/tasks/taskSlice'
 import ProjectModal from './ProjectModal'
-import {BsGear, BsGearFill} from 'react-icons/bs'
+import {BsGearFill} from 'react-icons/bs'
 
 
 const Nav = () => {
