@@ -1,0 +1,17 @@
+/* :root {
+    --primary-color: #004c8a;
+    --secondary-colour: #9baecc;
+    --light-colour: #cccccc;
+    --dark-colour: #3f3f3f;
+} */
+
+.lr-container {
+    margin: 0 auto;
+    height: 100%;
+}
+
+* {
+    color: black;
+}
+
+

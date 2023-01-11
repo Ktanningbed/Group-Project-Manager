@@ -1,0 +1,411 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+*{
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+:root {
+  --primary-color: #004c8a;
+  --secondary-colour: #98c1d9;
+  --light-colour: #cccccc;
+  --dark-colour: #3f3f3f;
+}
+
+a {
+  text-decoration: none;
+  color: #f5f5f5;
+}
+
+.sidebar {
+  height: 100%;
+  width: 350px;
+  /* position: absolute; */
+  left: 0;
+  top: 0;
+  padding-top: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: #3a4050;
+}
+
+.sidebar div{
+  padding: 8px;
+  font-size: 24px;
+  display: block
+}
+
+ul {
+  list-style: none;
+}
+
+
+/* .btn {
+  padding: 10px 20px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  background: #000;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  text-align: center;
+  appearance: button;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+
+.project-text{
+  font-size: 1.5rem;
+  /* color: #f5f5f5; */
+}
+
+.screen-container{
+  display:flex;
+  height: 100vh;
+  justify-content: flex-start;
+}
+
+.lr-background{
+  background-color: #98c1d9;
+  background-image: linear-gradient(to bottom right, #103ce7, #64e9ff);
+  height: 100vh;
+  position: relative;
+}
+.login-form{
+  width: 400px;
+  height: 400px;
+}
+
+.register-form{
+  width: 400px;
+  height: 550px;
+}
+.form-style{
+  
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background-color: #3a4050;
+  opacity: 1;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: space-around;
+}
+
+h3{
+  color: rgb(215, 212, 212);
+}
+
+.heading h1{
+  color: #f5f5f5;
+  opacity: 1;
+}
+
+/* body{
+  height: 100vh;
+} */
+
+/* --------------------------------------------------------------- */
+
+
+
+.login {
+	width: 320px;
+	/* padding: 30px; */
+	/* padding-top: 156px; */
+}
+
+.login__field {
+	padding: 20px 0px;	
+	position: relative;	
+  
+}
+
+.login__icon {
+	position: absolute;
+	top: 30px;
+	color: #3d5a80;
+}
+
+.login__input {
+	border: none;
+	border-bottom: 2px solid #D1D1D4;
+	background: none;
+	padding: 10px;
+	padding-left: 24px;
+	font-weight: 700;
+	width: 88%;
+	transition: .2s;
+  color: white;
+}
+
+.login__input:active,
+.login__input:focus,
+.login__input:hover {
+	outline: none;
+	border-bottom-color: #3d5a80;
+}
+
+.login__submit {
+	background: #fff;
+	font-size: 14px;
+	margin-top: 30px;
+	padding: 16px 20px;
+	border-radius: 26px;
+	border: 1px solid #D4D3E8;
+	text-transform: uppercase;
+	font-weight: 700;
+	display: flex;
+	align-items: center;
+	width: 200px;
+	color: #3d5a80;
+	box-shadow: 0px 2px 2px #3d5a80;
+	cursor: pointer;
+	transition: .2s;
+}
+
+.login > .button{
+  margin: 0 auto;
+}
+
+.login__submit:active,
+.login__submit:focus,
+.login__submit:hover {
+	border-color: #3d5a80;
+	outline: none;
+}
+
+.fa-icons{
+  position: absolute;
+  top:30px;
+  fill: #f5f5f5;
+}
+
+/* ----------------------------------------------------------------------- */
+.modalBackground {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(200, 200, 200, 0.5);
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left:0;
+}
+
+.modalContainer {
+  width: 500px;
+  height: 500px;
+  /* border-radius: 12px; */
+  background-color: var(--dark-colour);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+  margin: auto;
+  margin-top: 20vh;
+}
+
+.modalContainer .title {
+  display: inline-block;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.titleCloseBtn {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.titleCloseBtn button {
+  background-color: transparent;
+  border: none;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.modalContainer .body {
+  flex: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.7rem;
+  text-align: center;
+}
+
+.modalContainer .footer {
+  flex: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modalContainer .footer button {
+  width: 150px;
+  height: 45px;
+  margin: 10px;
+  border: none;
+  background-color: cornflowerblue;
+  color: white;
+  /* border-radius: 8px; */
+  font-size: 20px;
+  cursor: pointer;
+}
+
+#cancelBtn {
+  background-color: crimson;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  height: fit-content;
+  max-height: 600px;
+}
+
+.project-container{
+  overflow: hidden;
+}
+
+.user-list{
+  overflow: hidden;
+}
+.users{
+  overflow-y: scroll;
+  max-height: 100px;
+}
+
+.user-delete{
+  margin-right: 10px;
+}
+
+.tasks{
+  display: flex;
+  gap: 100px;
+  justify-content: flex-start;
+  padding-top: 30px;
+}
+
+.in-progress{
+  display: flex;
+  flex-direction: column;
+}
+
+.completed{
+  display: flex;
+  flex-direction: column;
+}
+
+.logo-btn{
+  background-color: transparent;
+  color: #f5f5f5;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  font-size: 2rem;
+}
+.logo{
+  height: 50px;
+  padding: 0px;
+}
+
+.logo-link{
+  margin-left: 15px;
+}
+
+.logout{
+  transform: rotate(180deg);
+  margin-right: 5px;
+}
+
+.logout-btn{
+  margin-left: 20px;
+}
+
+h1{
+  justify-items: center;
+  align-items: center;
+}
+
+.content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 2 1 0;
+}
+
+.task{
+  border: 2px solid #3d5a80;
+  border-radius: 30px;
+  padding: 20px;
+  padding-right: 300px;
+
+}
+
+.section-title{
+  color: var(--secondary-colour);
+  font-weight: bold;
+  margin-left: 20px;
+}
+
+.input-background{
+  background-color: #f5f5f5;
+  border-radius: 30px;
+  color:rgba(0, 0, 0, 1);
+}
+
+
+.gear{
+  overflow: none;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  height: 100%;
+}
+
+.project-btn{
+  padding-right: 0;
+  padding-left: 0px;
+  width: 260px;
+}
+
+.task-input{
+  background-color: #f5f5f5;
+  border-radius: 30px;
+  color:rgb(45, 44, 44);
+  margin-bottom: 20px;
+}
+
+.task-content{
+  background-color: var(--secondary-colour);
+  padding-top: 50px;
+}
+
+h3{
+  color: white;
+}
+
+.modal-title{
+  color: var(--secondary-colour);
+}
