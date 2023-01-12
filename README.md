@@ -1,4 +1,4 @@
-﻿# Group-Project-Manager
+﻿# GroupUp - A group project manager
 💡 Inspiration
 --------------
 
