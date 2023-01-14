@@ -1,4 +1,8 @@
 ﻿# GroupUp - A group project manager
+ 
+ ![groupup](https://user-images.githubusercontent.com/58784851/212493775-90c55c2b-6cec-4de9-97d0-bbab8302c9e2.png)
+
+
 💡 Inspiration
 --------------
 
